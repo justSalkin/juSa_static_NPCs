@@ -9,5 +9,5 @@ Config.NPC = {
 Config.PED = {
     --Valentine
     { ped_name = "test_pig_1", pedmodel = "A_C_Pig_01", coords = vector3(-60.86, -409.24, 70.76), heading = -80.23},
-    { npc_name = "test_pig_2", npcmodel = "A_C_Pig_01", coords = vector3(-65.57, -409.68, 70.79), heading = -80.67},
+    { ped_name = "test_pig_2", pedmodel = "A_C_Pig_01", coords = vector3(-65.57, -409.68, 70.79), heading = -80.67},
 }
