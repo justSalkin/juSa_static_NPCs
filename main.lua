@@ -26,6 +26,9 @@ function StartNPSs() -- Loading NPCs
         Wait(1000)
         FreezeEntityPosition(npc, true) -- NPC can escape?
         SetBlockingOfNonTemporaryEvents(npc, true) -- NPC can't be scared
+        local blip = Citizen.InvokeNative(0x554D9D53F696D002, 1664425300, x, y, z)--create blip
+        SetBlipSprite(blip, v.blip, true)
+        Citizen.InvokeNative(0x9CB1A1623062F402, blip, v.npc_name)
     end
 end
 
