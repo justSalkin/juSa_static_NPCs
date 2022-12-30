@@ -47,12 +47,11 @@ function StartPED() -- Loading Peds
         end
         -- Spawn Ped
         local ped = CreatePed(hashModel, x, y, z, v.heading, false, true, true, true)
-        Citizen.InvokeNative(0x283978A15512B2FE, ped, true) -- SetRandomOutfitVariation
         SetEntityNoCollisionEntity(PlayerPedId(), ped, false)
-        SetEntityCanBeDamaged(npc, true)
-        SetEntityInvincible(npc, false)
+        SetEntityCanBeDamaged(ped, true) --kill animal? (default: true)
+        SetEntityInvincible(ped, false)
         Wait(1000)
-        FreezeEntityPosition(npc, false) -- Ped can escape?
-        SetBlockingOfNonTemporaryEvents(npc, true) -- Ped can't be scared
+        FreezeEntityPosition(ped, false) -- Ped can escape?
+        SetBlockingOfNonTemporaryEvents(ped, true) -- Ped can't be scared
     end
 end
