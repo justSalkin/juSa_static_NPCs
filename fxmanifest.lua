@@ -4,7 +4,7 @@ rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aw
 
 author 'justSalkin'
 description 'Script for static NPCs'
-version '1.0.0'
+version '1.2.0'
 
 
 client_script {
