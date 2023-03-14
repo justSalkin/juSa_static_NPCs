@@ -17,6 +17,11 @@ you`ll need VORP CORE for the script to work properly
 # Framework
 Currently this script only works with VORP.
 
+# Issue
+There seems to be an issue if you'r using popdensity (https://github.com/kibook/popdensity). Animals will no longer spawn normaly.
+
+---
+
 # Changelog
 V 1.2.0  <br>
 - fixing animals <br>
